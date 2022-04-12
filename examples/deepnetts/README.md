@@ -279,9 +279,9 @@ You must have an account on Docker hub under the above user name.
 ```bash
 $ ./docker-runner.sh --buildImage
 
-orgr
+or
 
-$ ./docker-runner.sh --buildImage --dockerUserName "your_docker_username"
+$ ./docker-runner.sh --dockerUserName "your_docker_username" --buildImage
 ```
 
 ### Push built DeepNetts docker image to Docker hub
@@ -291,7 +291,7 @@ $ ./docker-runner.sh --pushImageToHub
 
 or
 
-$ ./docker-runner.sh --pushImageToHub --dockerUserName "your_docker_username"
+$ ./docker-runner.sh --dockerUserName "your_docker_username" --pushImageToHub
 ```
 
 The above will prompt the docker login name and password, before it can push your image to Docker hub (you must have an account on Docker hub).
